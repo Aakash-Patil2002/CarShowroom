@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Royal Cars</title>
+</head>
+<body onload="ShowWeb()">
+    <div class="loader">
+        <div class="preloader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div> 
+    </div>
+    <section class="wrapper">       
+        <header>
+            <div class="hero">
+                <nav>
+                    <div class="container">
+                       <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="nav-logo">
+                                <img class="logo" src="./images/illutrations/logo-white.png" alt="Logo">
+                            </div>
+                            <div class="d-none d-xl-block">
+                                <a class="nav-icon-a" href="#">
+                                    <img src="./images/illutrations/icon-lock.png" alt="Lock">
+                                    <p class="m-0">Login</p>
+                                </a>
+                            </div>
+                            <div class="d-none d-xl-block">
+                                <a class="nav-icon-a" href="#">
+                                    <img src="./images/illutrations/icon-search.png" alt="search">
+                                    <p class="m-0">Search</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- offcanvas -->  
+                        <a class="d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="bi bi-list"></i></a>
+                          <div class="offcanvas offcanvas-start" id="offcanvasExample">
+                            <div class="offcanvas-header bg-white">
+                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                              <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div class="dropdown mt-3">
+                                <ul class="d-block nav-menu off-menu">
+                                    <li><a id="id4" class="nav-a dropdown-toggle c-link" href="#">Home</a>
+                                        <ul id="id4-menu" class="nav-drop-menu">
+                                            <li><a class="nav-drop-a bg-color" href="#">Home1</a></li>
+                                            <li><a class="nav-drop-a bg-color" href="#">Home2</a></li>
+                                            <li><a class="nav-drop-a bg-color" href="#">Home3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a id="id5" class="nav-a dropdown-toggle c-link" href="#">About us</a>
+                                        <ul id="id5-menu" class="nav-drop-menu">
+                                            <li><a class="nav-drop-a bg-color " href="#">About us</a></li>
+                                            <li><a class="nav-drop-a bg-color" href="#">About us</a></li>
+                                            <li><a class="nav-drop-a bg-color" href="#">About us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a id="id6" class="nav-a dropdown-toggle c-link" href="#">vehicals</a>
+                                        <ul id="id6-menu" class="nav-drop-menu">
+                                            <li><a class="nav-drop-a bg-color" href="#">vehicals1</a></li>
+                                            <li><a class="nav-drop-a bg-color" href="#">vehicals2</a></li>
+                                            <li><a class="nav-drop-a bg-color" href="#">vehicals3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-a c-link" href="#">gallery</a>
+                                    </li>
+                                    <li><a class="nav-a c-link" href="#">Driver</a>
+                                    </li>
+                                    <li><a class="nav-a c-link" href="#">Contact us</a>
+                                    </li>
+                                </ul>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        <!-- ============================================= -->
+                        <ul class="d-none d-lg-flex nav-menu">
+                            <li><a id="id1" class="nav-a dropdown-toggle c-link" href="#">Home</a>
+                                <ul id="id1-menu" class="nav-drop-menu">
+                                    <li><a class="nav-drop-a bg-color" href="#">Home1</a></li>
+                                    <li><a class="nav-drop-a bg-color" href="#">Home2</a></li>
+                                    <li><a class="nav-drop-a bg-color" href="#">Home3</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="id2" class="nav-a dropdown-toggle c-link" href="#">About us</a>
+                                <ul id="id2-menu" class="nav-drop-menu">
+                                    <li><a class="nav-drop-a bg-color " href="#">About us</a></li>
+                                    <li><a class="nav-drop-a bg-color" href="#">About us</a></li>
+                                    <li><a class="nav-drop-a bg-color" href="#">About us</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="id3" class="nav-a dropdown-toggle c-link" href="#">vehicals</a>
+                                <ul id="id3-menu" class="nav-drop-menu">
+                                    <li><a class="nav-drop-a bg-color" href="#">vehicals1</a></li>
+                                    <li><a class="nav-drop-a bg-color" href="#">vehicals2</a></li>
+                                    <li><a class="nav-drop-a bg-color" href="#">vehicals3</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-a c-link" href="#">gallery</a>
+                            </li>
+                            <li><a class="nav-a c-link" href="#">Driver</a>
+                            </li>
+                            <li><a class="nav-a c-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                       </div>
+                    </div>
+                </nav>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="hero-para">120+ CARS TYPE & BRANDS</p>
+                                    <h2 class="h2-heading color">Search Your <span class="h2-bold">Best Cars.</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="container-fluid">
+                                <div class="row pb-4">
+                                    <div class="col-sm-6 col-lg-3 mb-3">
+                                        <label for="brand" class="select-label">Car Brand </label>
+                                        <select class="form-select form-select-lg car-select" id="brand">
+                                            <option selected>Any Brands</option>
+                                            <option value="1">Any Brands</option>
+                                            <option value="2">Any Brands</option>
+                                            <option value="3">Any Brands</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 mb-3">
+                                        <label for="brand" class="select-label">Car Type </label>
+                                        <select class="form-select form-select-lg car-select" id="brand">
+                                            <option selected>Any Type</option>
+                                            <option value="1">Any Type</option>
+                                            <option value="2">Any Type</option>
+                                            <option value="3">Any Type</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 mb-3">
+                                        <label for="brand" class="select-label">Car Price </label>
+                                        <select class="form-select form-select-lg car-select" id="brand">
+                                            <option selected>Price Low to High</option>
+                                            <option value="1">Price Low to High</option>
+                                            <option value="2">Price High to Low</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3 mb-3">
+                                        <label for="brand" class="select-label">Car Search</label>
+                                        <button class="bg-color search-car hero-search ">Search Car Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="color-block">
+                    <div class="color-heading">
+                        <div  class="text-center co-h6"><h6>Color Options</h6></div>
+                        <span class="gear"><i class="bi bi-gear-fill"></i></span>
+                    </div>
+                    <div class="colors-opt">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="clr" id="color1"></div>
+                            <div class="clr" id="color2"></div>
+                            <div class="clr" id="color3"></div>
+                            <div class="clr" id="color4"></div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="clr" id="color5"></div>
+                            <div class="clr" id="color6"></div>
+                            <div class="clr" id="color7"></div>
+                            <div class="clr" id="color8"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages-heading text-center mb-5">
+                        <p class="above-h2-para">120+ CARS TYPE & BRANDS</p>
+                        <h2 class="h2-heading">Royal Cars <span class="h2-bold">Advantages.</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 mb-5" data-aos="fade-up">
+                            <div class="py-5 adv-bg-white" >
+                                <div class="text-center">
+                                <img src="./images/illutrations/advantage-icon-1.png" data-aos="zoom-in-up" alt="advantage-icon">
+                                <h3 class="adv-h3">24/7 Customer Online Support</h3>
+                                <p class="adv-small-text">Call us Anywhere Anytime</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-5" data-aos="fade-up">
+                            <div class="adv-bg-white py-5">
+                                <div class="text-center">
+                                <img src="./images/illutrations/advantage-icon-2.png" data-aos="zoom-in-up" alt="advantage-icon">
+                                <h3 class="adv-h3">Reservation Anytime You Wants</h3>
+                                <p class="adv-small-text">24/7 Online Reservation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-5">
+                            <div class="adv-bg-white py-5" data-aos="fade-up">
+                                <div class="text-center">
+                                <img src="./images/illutrations/advantage-icon-3.png" data-aos="zoom-in-up" alt="advantage-icon">
+                                <h3 class="adv-h3">Lots of Picking Locations</h3>
+                                <p class="adv-small-text">250+ Locations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-right">
+                            <img class="img-fluid" src="./images/illutrations/about-img-01.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <p class="above-h2-para">KNOW MORE ABOUT US</p>
+                                <h2 class="h2-heading">Who <span class="h2-bold">Royal Cars </span>Are.</h2>
+                                <p class="about-sm-para">We know the difference is in the details and that’s why our car rental services, in the tourism and business industry, stand out for their quality and good taste.</p>
+                                <p class="about-para"><span><i class="bi bi-check-circle-fill color"></i></span>We working since 1980 with 4.000 customers</p>
+                                <p class="about-para"><span><i class="bi bi-check-circle-fill color"></i></span>All brand & type cars in our garage</p>
+                                <p class="about-para"><span><i class="bi bi-check-circle-fill color"></i></span>1.000+ picking locations around the world</p>
+                                <div class="mt-5">
+                                    <img src="./images/illutrations/about-sign.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="discount">
+                <div class="discount-bg">
+                    <div class="container">
+                        <div class="mb-5">
+                            <p class="above-h2-para text-white fw-medium">NEW MEMBER DISCOUNT</p>
+                            <h2 class="h2-heading color">Reserved Now & Get <span class="h2-bold">50% Off </span> <br>for Audi & Mercedes Only.</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <img height="100px" width="100px" src="./images/illutrations/discount-car-01.jpg" alt="discount-car">
+                                    </div>
+                                    <div>
+                                        <p class="m-0"><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i></p>
+                                        <h4 class="mb-0 lh-1"><a class="discount-a c-link" href="#">Audi Cabriolet R8</a></h4>
+                                        <p class="dis-sm-para"><del class="color-999">$50.00</del> <b><ins>25.00</ins> USD</b> per day</p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                            <div class="car-specificity bg-color"><i class="bi bi-fuel-pump-fill"></i></i></span> PETROL</div>
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <img height="100px" width="100px" src="./images/illutrations/discount-car-02.jpg" alt="discount-car">
+                                    </div>
+                                    <div>
+                                        <p class="m-0"><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i></p>
+                                        <h4 class="mb-0 lh-1"><a class="discount-a c-link" href="#">Mercedes Benz I7</a></h4>
+                                        <p class="dis-sm-para"><del class="color-999">$50.00</del> <b><ins>25.00</ins> USD</b> per day</p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-fuel-pump-fill"></i></i></span> PETROL</div>
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <img height="100px" width="100px" src="./images/illutrations/discount-car-03.jpg" alt="discount-car">
+                                    </div>
+                                    <div>
+                                        <p class="m-0"><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i><i class="bi bi-star-fill color"></i></p>
+                                        <h4 class="mb-0 lh-1"><a class="discount-a c-link" href="#">Audi Cabriolet R8</a></h4>
+                                        <p class="dis-sm-para"><del class="color-999">$50.00</del> <b><ins>25.00</ins> USD</b> per day</p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-fuel-pump-fill"></i></i></span> PETROL</div>
+                                            <div class="car-specificity bg-color"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218301.9643534239!2d-77.18884651364245!3d38.89014692942364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sin!4v1724215066068!5m2!1sen!2sin" width="100%" class="map-height" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="container py-4">
+                    <div class="find-car">
+                        <div>
+                            <h2 class="h2-heading color">Find Car on Map</h2>
+                        </div>
+                        <form action="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <label for="brand" class="select-label">Car Brand </label>
+                                        <select class="form-select form-select-lg car-select" id="brand">
+                                            <option selected>Any Brands</option>
+                                            <option value="1">Any Brands</option>
+                                            <option value="2">Any Brands</option>
+                                            <option value="3">Any Brands</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <label for="brand" class="select-label">Car Type </label>
+                                        <select class="form-select form-select-lg car-select" id="brand">
+                                            <option selected>Any Type</option>
+                                            <option value="1">Any Type</option>
+                                            <option value="2">Any Type</option>
+                                            <option value="3">Any Type</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <label for="brand" class="select-label">Car Price </label>
+                                        <select class="form-select form-select-lg car-select" id="brand">
+                                            <option selected>Price Low to High</option>
+                                            <option value="1">Price Low to High</option>
+                                            <option value="2">Price High to Low</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <label for="brand" class="select-label">Car Search</label>
+                                        <button class="search-car">Search Car Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="best-offer">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <p class="above-h2-para">FEATURED CARS</p>
+                        <h2 class="h2-heading">Our <span class="h2-bold">Best Offers.</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3 for-hover" data-aos="zoom-in-up">
+                            <div class="best-offer-white-div pt-4">
+                                <div class="img-div">
+                                    <img width="250px" height="156px" src="./images/illutrations/best-01.jpg" alt="">
+                                    <div class="img-div-overlay">
+                                    <span class="bg-color"><i class="bi bi-search"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-center py-3">
+                                        <h3 class="best-offer-h3">Volk <span class="varient color">GTR</span></h3>
+                                        <p>Start at <b>45.00 USD</b> per day</p>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-wrap m-auto">
+                                                <div class="car-specificity2"><span><i class="bi bi-car-front-fill"></i></i></span> 2017</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rent-this-car bg-color">
+                                <h5>Rent This Car</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3 for-hover" data-aos="zoom-in-up">
+                            <div class="best-offer-white-div pt-4">
+                                <div class="img-div">
+                                    <img width="250px" height="156px" src="./images/illutrations/best-02.jpg" alt="">
+                                    <div class="img-div-overlay">
+                                    <span class="bg-color"><i class="bi bi-search"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-center py-3">
+                                        <h3 class="best-offer-h3">Audi <span class="varient color">R8</span></h3>
+                                        <p>Start at <b>45.00 USD</b> per day</p>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-wrap m-auto">
+                                                <div class="car-specificity2"><span><i class="bi bi-car-front-fill"></i></i></span> 2017</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rent-this-car bg-color">
+                                <h5>Rent This Car</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3 for-hover" data-aos="zoom-in-up">
+                            <div class="best-offer-white-div pt-4">
+                                <div class="img-div">
+                                    <img width="250px" height="156px" src="./images/illutrations/best-03.jpg" alt="">
+                                    <div class="img-div-overlay">
+                                    <span class="bg-color"><i class="bi bi-search"></i></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-center py-3">
+                                        <h3 class="best-offer-h3">Lexus <span class="varient color">Z.E.</span></h3>
+                                        <p>Start at <b>45.00 USD</b> per day</p>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-wrap m-auto">
+                                                <div class="car-specificity2"><span><i class="bi bi-car-front-fill"></i></i></span> 2017</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                <div class="car-specificity2"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rent-this-car bg-color">
+                                <h5>Rent This Car</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <p class="above-h2-para">LATEST TESTIMONIAL</p>
+                        <h2 class="h2-heading">What <span class="h2-bold">They Say</span> About Us.</h2>
+                    </div>
+                    <div class="w-85">
+                        <div class="text-center">
+                            <p class="testimonial-para">“This was our first time renting from Royal Cars and we were very pleased with the whole experience. Your price was lower than other companies. Our rental experience was good from start to finish, so we’ll be back in the future lorem ipsum diamet.”</p>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="r-driver">
+                <div class="container driver-top">
+                    <div class="d-flex flex-wrap">
+                        <div class="black-friday">
+                            <div class="bf-text">
+                                <p class="above-h2-para text-white fw-medium">BLACK CARS DISCOUNT 50%</p>
+                                <h2 class="h2-heading color">Special Offers For <br><span class="h2-bold">Black Friday </span></h2>
+                            </div>
+                        </div>
+                        <div class="free-insurance bg-color">
+                            <div class="fi-text">
+                                <p class="above-h2-para text-white fw-medium">BLACK CARS DISCOUNT 50%</p>
+                                <h2 class="h2-heading ">Rent 3 Days & Get <span class="h2-bold">Free Insuranse</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <p class="above-h2-para text-white fw-medium">OUR PROFESSIONAL STAFF</p>
+                        <h2 class="h2-heading color">Royal Cars <span class="h2-bold">Drivers</span></h2>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6 col-lg-4 mb-3" data-aos="zoom-in-up">
+                            <div class="driver">
+                                <div class="driver-img">
+                                    <img src="./images/illutrations/driver-blog-img.jpg" alt="Driver-1 image">
+                                </div>
+                                <div class="driver-overlay">
+                                    <h5 class="mb-3">Luis Henrique</h5>
+                                    <p class="driver-ex mb-4">5 Years Experience</p>
+                                    <ul class="social-driver">
+                                        <li><a class="dri-social-icon" href="#"></a><i class="bi bi-skype"></i></li>
+                                        <li><a class="dri-social-icon" href="#"><i class="bi bi-twitter"></i></a></li>
+                                        <li><a class="dri-social-icon" href="#"><i class="bi bi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3" data-aos="zoom-in-up">
+                            <div class="driver">
+                                <div class="driver-img">
+                                    <img src="./images/illutrations/driver-blog-img-2.jpg" alt="Driver-1 image">
+                                </div>
+                                <div class="driver-overlay">
+                                    <h5 class="mb-3">Luis Henrique</h5>
+                                    <p class="driver-ex mb-4">5 Years Experience</p>
+                                    <ul class="social-driver">
+                                        <li><a class="dri-social-icon" href="#"></a><i class="bi bi-skype"></i></li>
+                                        <li><a class="dri-social-icon" href="#"><i class="bi bi-twitter"></i></a></li>
+                                        <li><a class="dri-social-icon" href="#"><i class="bi bi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3" data-aos="zoom-in-up">
+                            <div class="driver">
+                                <div class="driver-img">
+                                    <img src="./images/illutrations/driver-blog-img-3.jpg" alt="Driver-1 image">
+                                </div>
+                                <div class="driver-overlay">
+                                    <h5 class="mb-3">Luis Henrique</h5>
+                                    <p class="driver-ex mb-4">5 Years Experience</p>
+                                    <ul class="social-driver">
+                                        <li><a class="dri-social-icon" href="#"></a><i class="bi bi-skype"></i></li>
+                                        <li><a class="dri-social-icon" href="#"><i class="bi bi-twitter"></i></a></li>
+                                        <li><a class="dri-social-icon" href="#"><i class="bi bi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 m-auto">
+                            <a class=" view-driver bg-color" href="#">view all driver</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="best-vehicals">
+                <div class="container-xl">
+                    <div class="text-center mb-5">
+                        <p class="above-h2-para">OUR VEHICLES BRANDS & TYPE</p>
+                        <h2 class="h2-heading">Find Your <span class="h2-bold">Best Vehicles.</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3">
+                            <ul class="car-list">
+                                <li class="bg-color"><a class="car-list-a" href="#">All Manufacturer</a></li>
+                                <li class="bg-color"><a class="car-list-a" href="#">Honda</a></li>
+                                <li class="bg-color"><a class="car-list-a" href="#">Mercedes Benz</a></li>
+                                <li class="bg-color"><a class="car-list-a" href="#">Toyota</a></li>
+                                <li class="bg-color"><a class="car-list-a" href="#">Volkswagen</a></li>
+                                <li class="bg-color"><a class="car-list-a" href="#">Audi</a></li>
+                                <li class="bg-color"><a class="car-list-a" href="#">Ferrari</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-8 col-md-9">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-up">
+                                        <div class="bg-white py-2">
+                                            <div class="img-div">
+                                                <img class="img-fluid" src="./images/illutrations/best-01.jpg" alt="">
+                                                <div class="img-div-overlay">
+                                                <span><i class="bi bi-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=" px-4">
+                                                    <p class="mb-0">Registered 2016</p>
+                                                    <h4 class=""><a class="best-vehical-name" href="#">Volkswagen <span class="varient">GTR</span></a></h4>
+                                                    <div><span class="bv-price bg-color">$50/Day</span> <span class="bv-avg">
+                                                        <i class="bi bi-speedometer2"></i> 2.3K CC
+                                                    </span></div>
+                                                    <hr>
+                                                    <div class="d-flex flex-wrap justify-content-between">
+                                                        <div class="car-specificity3"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-up">
+                                        <div class="bg-white py-2">
+                                            <div class="img-div">
+                                                <img class="img-fluid" src="./images/illutrations/best-02.jpg" alt="">
+                                                <div class="img-div-overlay">
+                                                <span><i class="bi bi-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=" px-4">
+                                                    <p class="mb-0">Registered 2016</p>
+                                                    <h4 class=""><a class="best-vehical-name" href="#">Audi Sport <span class="varient">S8</span></a></h4>
+                                                    <div><span class="bv-price bg-color">$50/Day</span> <span class="bv-avg">
+                                                        <i class="bi bi-speedometer2"></i> 2.3K CC
+                                                    </span></div>
+                                                    <hr>
+                                                    <div class="d-flex flex-wrap justify-content-between">
+                                                        <div class="car-specificity3"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-up">
+                                        <div class="bg-white py-2">
+                                            <div class="img-div">
+                                                <img class="img-fluid" src="./images/illutrations/best-03.jpg" alt="">
+                                                <div class="img-div-overlay">
+                                                <span><i class="bi bi-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=" px-4">
+                                                    <p class="mb-0">Registered 2016</p>
+                                                    <h4 class=""><a class="best-vehical-name" href="#">Bugatti Feyron  <span class="varient">F2</span></a></h4>
+                                                    <div><span class="bv-price bg-color">$50/Day</span> <span class="bv-avg">
+                                                        <i class="bi bi-speedometer2"></i> 2.3K CC
+                                                    </span></div>
+                                                    <hr>
+                                                    <div class="d-flex flex-wrap justify-content-between">
+                                                        <div class="car-specificity3"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-up">
+                                        <div class="bg-white py-2">
+                                            <div class="img-div">
+                                                <img class="img-fluid" src="./images/illutrations/best-04.jpg" alt="">
+                                                <div class="img-div-overlay">
+                                                <span><i class="bi bi-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=" px-4">
+                                                    <p class="mb-0">Registered 2016</p>
+                                                    <h4 class=""><a class="best-vehical-name" href="#">Mercedes Benz <span class="varient">R3</span></a></h4>
+                                                    <div><span class="bv-price bg-color">$50/Day</span> <span class="bv-avg">
+                                                        <i class="bi bi-speedometer2"></i> 2.3K CC
+                                                    </span></div>
+                                                    <hr>
+                                                    <div class="d-flex flex-wrap justify-content-between">
+                                                        <div class="car-specificity3"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-up">
+                                        <div class="bg-white py-2">
+                                            <div class="img-div">
+                                                <img class="img-fluid" src="./images/illutrations/best-05.jpg" alt="">
+                                                <div class="img-div-overlay">
+                                                <span><i class="bi bi-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=" px-4">
+                                                    <p class="mb-0">Registered 2016</p>
+                                                    <h4 class=""><a class="best-vehical-name" href="#">Toyota Avanza <span class="varient">RX</span></a></h4>
+                                                    <div><span class="bv-price bg-color">$50/Day</span> <span class="bv-avg">
+                                                        <i class="bi bi-speedometer2"></i> 2.3K CC
+                                                    </span></div>
+                                                    <hr>
+                                                    <div class="d-flex flex-wrap justify-content-between">
+                                                        <div class="car-specificity3"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-up">
+                                        <div class="bg-white py-2">
+                                            <div class="img-div">
+                                                <img class="img-fluid" src="./images/illutrations/best-06.jpg" alt="">
+                                                <div class="img-div-overlay">
+                                                <span><i class="bi bi-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class=" px-4">
+                                                    <p class="mb-0">Registered 2016</p>
+                                                    <h4 class=""><a class="best-vehical-name" href="#">Chevrolet  <span class="varient">GTR</span></a></h4>
+                                                    <div><span class="bv-price bg-color">$50/Day</span> <span class="bv-avg">
+                                                        <i class="bi bi-speedometer2"></i> 2.3K CC
+                                                    </span></div>
+                                                    <hr>
+                                                    <div class="d-flex flex-wrap justify-content-between">
+                                                        <div class="car-specificity3"><span><i class="bi bi-gear-wide-connected"></i></span> Manual</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-fuel-pump-fill"></i></span> PETROL</div>
+                                                        <div class="car-specificity3"><span><i class="bi bi-backpack2-fill"></i></span> 2.3k CC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="question">
+                <div class="container"> 
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <div class="mb-5">
+                                <p class="above-h2-para">FIND YOUR ANSWER HERE</p>
+                                <h2 class="h2-heading">Frequenly <span class="h2-bold">Ask & Questions.</span>.</h2>
+                            </div>  
+                            <div>
+                                <p class="qa-para"><span><i class="bi bi-arrow-down-circle-fill"></i></span> How to reserved a car here?</p>
+                                <p class="qa-para"><span><i class="bi bi-arrow-down-circle-fill"></i></span> How can i drop the rental car?</p>
+                                <p class="qa-para"><span><i class="bi bi-arrow-down-circle-fill"></i></span> What happen if i the car? </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="mb-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="text-center fir">
+                                            <span><i class="bi bi-person-fill qa-icon"></i></span>
+                                            <h6>About account</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <div class="text-center second">
+                                            <span><i class="bi bi-question-circle-fill qa-icon1"></i></span>
+                                            <h6>Technical support</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="text-center second">
+                                            <span><i class="bi bi-car-front-fill qa-icon1"></i></span>
+                                            <h6>Cars Features</h6>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>  
+                            <div>
+                                <p class="qa-para"><span><i class="bi bi-arrow-down-circle-fill"></i></span> How to reserved a car here?</p>
+                                <p class="qa-para"><span><i class="bi bi-arrow-down-circle-fill"></i></span> How can i drop the rental car?</p>
+                                <p class="qa-para"><span><i class="bi bi-arrow-down-circle-fill"></i></span> What happen if the car? </p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class=" col-sm-8 col-md-4 col-lg-3 m-auto">
+                            <a class=" view-driver bg-color" href="#">Make a questions</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="latest-news">
+                <div class="latest-news-overlay">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <p class="above-h2-para text-white fw-medium">ARTICLES FROM BLOG</p>
+                            <h2 class="h2-heading color">Our <span class="h2-bold">Latest News.</span></h2>
+                        </div>
+                        <div class="row py-4">
+                            <div class="col-md-6 col-lg-4 mb-5" data-aos="zoom-in-up">
+                                <div class="mb-4">
+                                    <img class="img-fluid" src="./images/illutrations/latest-news-01.jpg" alt="">
+                                </div>
+                                <div>
+                                    <span class="latest-date">27 june 2018</span>
+                                    <a class="latest-yellow color" href="#">What To Do if Your Rental Car Has Met With An Accident</a>
+                                    <a class="read-artical" href="#">Read article</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-5" data-aos="zoom-in-up">
+                                <div class="mb-4">
+                                    <img class="img-fluid" src="./images/illutrations/latest-news-02.jpg" alt="">
+                                </div>
+                                <div>
+                                    <span class="latest-date">27 june 2018</span>
+                                    <a class="latest-yellow color" href="#">What To Do if Your Rental Car Has Met With An Accident</a>
+                                    <a class="read-artical" href="#">Read article</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-5" data-aos="zoom-in-up">
+                                <div class="mb-4">
+                                    <img class="img-fluid" src="./images/illutrations/latest-news-03.jpg" alt="">
+                                </div>
+                                <div>
+                                    <span class="latest-date">27 june 2018</span>
+                                    <a class="latest-yellow color" href="#">What To Do if Your Rental Car Has Met With An Accident</a>
+                                    <a class="read-artical" href="#">Read article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="text-white py-4">
+                        <div class="text-center">
+                            <div class="text-center py-4">
+                                <a href="#"><img src="images/illutrations/instagram.png" alt="Instagram image"></a>
+                            </div>
+                            <span class="insta-descip">Follow Our Instagram <span class="color">#RoyalCars</span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="car-image-line">
+                <div class="d-flex flex-wrap">
+                    <div class="gallery">
+                        <img class="img-fluid" src="images/illutrations/gallery-img01.jpg" alt="car-image">
+                        <div class="g-ovelay">
+                            <div class="go-inner bg-color">
+                                <span><i class="bi bi-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img class="img-fluid" src="images/illutrations/gallery-img02.jpg" alt="car-image">
+                        <div class="g-ovelay">
+                            <div class="go-inner bg-color">
+                                <span><i class="bi bi-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img class="img-fluid" src="images/illutrations/gallery-img03.jpg" alt="car-image">
+                        <div class="g-ovelay">
+                            <div class="go-inner bg-color">
+                                <span><i class="bi bi-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img class="img-fluid" src="images/illutrations/gallery-img04.jpg" alt="car-image">
+                        <div class="g-ovelay">
+                            <div class="go-inner bg-color">
+                                <span><i class="bi bi-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img class="img-fluid" src="images/illutrations/gallery-img05.jpg" alt="car-image">
+                        <div class="g-ovelay">
+                            <div class="go-inner bg-color">
+                                <span><i class="bi bi-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 mb-5">
+                        <div class="mb-5">
+                            <img class="footer-logo" src="./images/illutrations/footer-logo.png" alt="logo">
+                        </div>
+                        <div>
+                            <p class="footer-para">We know the difference is in the details and that’s why our car rental services, in the tourism and business industry, stand out for their quality. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-5">
+                        <span class="call-us color"> CALL US ON LINE 1</span>
+                        <h4 class="foot-h4">100.1212.2000</h4>
+                        <h6 class="foot-h6 mb-4">USEFUL LINK</h6>
+                        <ul class="footer-ul">
+                            <li><a class="footer-a c-link" href="#">Private Policy</a></li>
+                            <li><a class="footer-a c-link" href="#">Term & Conditions</a></li>
+                            <li><a class="footer-a c-link" href="#">Copyright Notification</a></li>
+                            <li><a class="footer-a c-link" href="#">Register for New Member</a></li>
+                            <li><a class="footer-a c-link" href="#">Press Release</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-5">
+                        <span class="call-us color"> CALL US ON LINE 2</span>
+                        <h4 class="foot-h4">100.2424.2000</h4>
+                        <h6 class="foot-h6 mb-4">OUR INFO</h6>
+                        <ul class="footer-ul">
+                            <li><a class="footer-a c-link" href="#">About Royal Cars</a></li>
+                            <li><a class="footer-a c-link" href="#">Our Mission & Strategy</a></li>
+                            <li><a class="footer-a c-link" href="#">Our Vision</a></li>
+                            <li><a class="footer-a c-link" href="#">Royal Cars Advantages</a></li>
+                            <li><a class="footer-a c-link" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-5">
+                        <div class="col-12">
+                            <a class="royalcar-map bg-color mb-3" href="#"><img class="me-3" src="./images/illutrations/icon-footer-map.png" alt="">RoyalCars on Map</a>
+                        </div>
+                        <h6 class="foot-h6 mb-4">ACCOUNT INFORMATION</h6>
+                        <ul class="footer-ul">
+                            <li><a class="footer-a c-link" href="#">Login to My Account</a></li>
+                            <li><a class="footer-a c-link" href="#">Press Releases</a></li>
+                            <li><a class="footer-a c-link" href="#">User Dashboard</a></li>
+                            <li><a class="footer-a c-link" href="#">Email Address</a></li>
+                            <li><a class="footer-a c-link" href="#">Lorem Ipsum dolorsit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
